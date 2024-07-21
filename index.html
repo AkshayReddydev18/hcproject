@@ -1,74 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            box-sizing: border-box;
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      .main2,
+      .main3,
+      .main4,
+      .main5 {
+        width: 100%;
+      }
+      div.header {
+        display: flex;
+        justify-content: space-between;
+        color: aliceblue;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(33, 110, 138);
+      }
+      @media screen and (max-width: 426px) {
+        div.header {
+          padding: 0px;
         }
-        body{
-            padding: 0px;
-            margin: 0px;
+        div.main1 {
+          flex-wrap: wrap;
+          align-content: center;
         }
-        .container{
-            /* background-color: antiquewhite; */
+        ul {
+          gap: 4px;
         }
-        div.header{
-            display: flex;
-            justify-content: space-between;
-            color: aliceblue;
-            width: 100vw;
-            background-color: rgb(33, 110, 138);
-            padding: 15px 20px 0px 20px;
-            margin: -8px;
-
+        div.main2 {
+          padding: 10px;
         }
-        .head1{
-            padding: 8px;
+      }
+      @media screen and (min-width: 426px) {
+        div.header {
+          padding: 15px 20px 0px 20px;
+          justify-content: space-around;
         }
-        ul{
-            list-style: none;
-            display: inline-flex;
-            gap:15px;
+        ul {
+          gap: 20px;
         }
-        img.growth{
-            height:20px;
-            width: 20px;
-            background-color:rgb(33, 110, 138) ;
-
+        div.main11,
+        div.main12 {
+          margin-top: 8%;
         }
-        li.contact{
-            border-radius: 15px;
-            color: rgb(42, 211, 50);
-
+        [alt="wgg"] {
+          height: 350px;
+          width: 350px;
         }
-        a{
-            text-decoration: none;
-            color:rgb(42, 211, 50)
-
-        }
+      }
+      .head1 {
+        padding-top: 8px;
+      }
+      ul {
+        list-style: none;
+        display: inline-flex;
+      }
+      img.growth {
+        height: 20px;
+        width: 20px;
+        background-color: rgb(33, 110, 138);
+      }
+      li {
+        border: 1px solid rgb(33, 110, 138);
+        border-radius: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      div.main1 {
+        background-image: url(./slant-divider.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 95vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: x-large;
+      }
+      div.main11,
+      div.main12 {
+        padding: 10px;
+        height: 250px;
+        width: 300px;
+      }
+      [alt="wgg"] {
+        height: 250px;
+        width: 300px;
+      }
+      span.let {
+        color: black;
+        background-color: aliceblue;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 5px;
+      }
+      span#color {
+        color: gold;
+      }
+      div.main2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 20px;
+        max-width: 530px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="head1"><img class="growth" src="./growth-50.png" alt="growth"><span>   </span><b>Digital Trend</b>
-
-            </div>
-            <div class="head2">
-                <ul>
-                    <li>Studio</li>
-                    <li>OurWorks</li>
-                    <li>Blog</li>
-                    <li class="contact"><a href="mailto:Digitaltrends.co"> Contact</a></li>
-                </ul>
-            </div>
-            <!-- <div class="head3"></div>
-            <div class="head4"></div> -->
+      <div class="header">
+        <div class="head1">
+          <img class="growth" src="./growth-50.png" alt="growth" />
+          <span><b>Digital Trend</b></span>
         </div>
-        <div class="main"></div>
+        <div class="head2">
+          <ul>
+            <li>Studio</li>
+            <li>OurWorks</li>
+            <li>Blog</li>
+            <li class="contact">
+              <a href="mailto:Digitaltrends.co"> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main1">
+        <div class="main11">
+          <p>We are ready for your digital marketing</p>
+          <span class="let">Let us discuss together!</span>
+          <a href="tel:9948634876">
+            <pre><img src="./call.png" alt="call">+91 9948634876</pre>
+          </a>
+        </div>
+        <div class="main12"><img src="working-girl.png" alt="wgg" /></div>
+      </div>
+      <div class="main2">
+        <div>
+          <h1>
+            the best <span id="color">Digital Marketing agency</span> in Rio de
+            Janeiro
+          </h1>
+        </div>
+        <div>
+          <p id="para">
+            Total 5 HTML pages are included in this template from TemplateMo
+            website. Please check 2 blog pages,project page, and contact page.
+          </p>
+        </div>
+        <div>
+          <p id="para">
+            You are <span id="color"> allowed </span>to use this template for
+            commercial or non-commercial purpose. You are NOT allowed to
+            redistribute the template ZIP file on template collection websites.
+          </p>
+        </div>
+      </div>
+      <div class="main3"></div>
+      <div class="main4"></div>
+      <div class="main5"></div>
     </div>
-</body>
+  </body>
 </html>
