@@ -24,7 +24,6 @@
         padding: 0px;
         margin: 0px;
       }
-      .main4,
       .main5 {
         width: 100%;
       }
@@ -32,7 +31,6 @@
         display: flex;
         justify-content: space-between;
         color: aliceblue;
-        /* position: sticky; */
         top: 0px;
         background-color: rgb(33, 110, 138);
         z-index: 1;
@@ -43,56 +41,75 @@
         }
         div.main1 {
           flex-wrap: wrap;
-          align-content: center;
           height: 110vh;
+          color: white;
+          text-align: center;
         }
-        ul {
-          /* gap: 4px; */
-        }
+         ul {
+        list-style: none;
+        display: inline-flex;
+        font-size: 15px;
+        gap: 5px;
+        padding: 20px 0px 0px 0px;
+        
+      }
         div.main2 {
           padding: 10px;
-          /* height: 110vh; */
         }
         [alt="wgg"] {
-          height: 100%;
-          width: 100%;
+          height: 95%;
+          width: 95%;
         }
         [alt="office"] {
           height: 130px;
           width: 300px;
+        }div.main4{
+          flex-wrap: wrap;
         }
+        [alt="fa"] {
+        height: 60%;
+        width: 60%;
+      }
       }
       @media screen and (min-width: 426px) {
         div.header {
           padding: 15px 20px 0px 20px;
           justify-content: space-around;
         }
-        ul {
+        ul{
+          list-style: none;
+        display: inline-flex;
           gap: 20px;
         }
-        div.main11,
-        div.main12 {
+        
+        div.main11 {
+          color: white;
           margin: auto;
+          padding-left: 10%;
         }
         .main2 {
-          margin: auto;
           height: 100vh;
+          margin: 0% auto;
         }
-        [alt="wgg"] {
-          height: 100%;
-          width: 100%;
-        }
+
         [alt="office"] {
           height: 250px;
           width: 500px;
         }
+        div.main4{
+          justify-content: center;
+        }
+        [alt="fa"]{
+        height:60%;
+        width:60%;
+        align-self: end;
+        /* padding-left: 10%; */
+      }h2 {
+        padding-top:5%;
+      }
       }
       .head1 {
         padding-top: 8px;
-      }
-      ul {
-        list-style: none;
-        display: inline-flex;
       }
       img.growth {
         height: 20px;
@@ -117,11 +134,34 @@
         align-content: center;
         font-size: x-large;
       }
-      div.main11,
-      div.main12 {
-        height: 250px;
-        width: 250px;
-        padding: 20px;
+      [alt="wgg"] {
+        height: 95%;
+        width: 95%;
+      }
+      @keyframes animi1{
+        50% {
+          transform:rotateY(0deg);
+        }
+        100% {
+          transform:rotateY(-180deg);
+        }
+      }
+      [alt="wgg"]{
+          animation: animi1 2s linear infinite alternate;
+        }
+      @keyframes animi2{
+        50% {
+          transform: translate(-20px);
+
+        }
+        100%{
+          transform: translate(40px);
+
+        }
+
+      }
+      [alt="office"]{
+        animation: animi2 3s linear infinite alternate;
       }
       div.main12 {
         filter: drop-shadow(10px 10px 10px black);
@@ -147,17 +187,36 @@
       div.main3 {
         text-align: center;
         font-size: 20px;
-        height: 100vh;
+        height: 120vh;
         background-color: rgb(169, 214, 232);
         padding: 0px 15vw;
         text-align: center;
       }
-      h2 {
-        padding-top: 10px;
-      }
       .d-block {
-        width:70vw;
-        height:80vh;
+        width: 70vw;
+        height: 75vh;
+      }
+      div.main4 {
+        display: flex;
+        text-align: center;
+        padding: auto;
+        height: 80vh;
+      }
+      .femaleavatar1{
+        text-align: center;
+        filter: drop-shadow(10px 10px 10px rgb(46, 68, 95) );
+        margin: auto 0px;
+        /* float: right; */
+
+      }
+      div.femaleavatar2{
+        max-width:700px;
+        margin:auto;
+        font-size: 1em;
+        text-align: center;
+        /* float: left; */
+        width: 140%;
+        padding: auto 20% auto auto;
       }
     </style>
   </head>
@@ -181,7 +240,7 @@
     <div class="main1">
       <div class="main11">
         <p>We are ready for your digital marketing</p>
-        <span class="let">Let us discuss together!</span>
+        <span class="let">Let us discuss together!</span><br />
         <a href="tel:9948634876">
           <pre><img src="./call.png" alt="call">+91 9948634876</pre>
         </a>
@@ -288,7 +347,12 @@
             </div>
           </div>
           <div class="carousel-item">
-            <video src="./Sajni - Laapataa Ladies Ft. Arijit Singh-(Hd9video).mp4" controls class="d-block" alt="pi5"></video>
+            <video
+              src="./Sajni - Laapataa Ladies Ft. Arijit Singh-(Hd9video).mp4"
+              controls
+              class="d-block"
+              alt="pi5"
+            ></video>
             <div class="carousel-caption d-none d-md-block">
               <h5>Five slide label</h5>
               <p>
@@ -317,7 +381,26 @@
         </button>
       </div>
     </div>
-    <div class="main4"></div>
-    <div class="main5"></div>
+    <div class="main4">
+      <div class="femaleavatar1">
+        <img src="./female-avatar.png" alt="fa" />
+      </div>
+      <div class="femaleavatar2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          deserunt. Aliquam debitis neque minima mollitia placeat eum accusamus
+          natus quaerat ad esse impedit aspernatur quisquam, laudantium eos quos
+          veritatis hic?
+        </p>
+        <p><span id="color">Akshay Reddy</span> / Digital Agency (CEO)</p>
+      </div>
+    </div>
+    <div class="main5">
+      <div class="main51">We make creative <span id="color">brands </span>only</div>
+      <div class="main52"> <h2>CONTACT INFO</h2>
+        <p> <span id="color">Akshay Reddy</span> / Digital
+      </div>
+      <div class="main53"></div>
+    </div>
   </body>
 </html>
