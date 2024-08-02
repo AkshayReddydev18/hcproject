@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (max-width: 475px) {
+        .navbar2 {
+          display: none;
+        }
+        .dropbtn {
+          background-color: transparent;
+          border: none;
+        }
+
+        .navbar {
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: transparent;
+          min-width: 80px;
+          z-index: 1;
+          box-shadow: 0px 8px 16px 0px black;
+        }
+
+        .dropdown-content a {
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {
+          background-color: grey;
+        }
+
+        .navbar:hover .dropdown-content {
+          display: block;
+        }
+
+        .navbar:hover .dropbtn {
+          background-color:transparent;
+        }
+      }
+      @media screen and (min-width: 476px) {
+        .navbar {
+          display: none;
+        }
+      }
+
+      div.nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        background-color:rgb(175, 225, 175);
+        height: 50px;
+      }
+
+      ul {
+        display: inline-flex;
+        gap: 10px;
+        text-decoration: none;
+        list-style: none;
+      }
+      div.main1 {
+        height: 100vh;
+        /* background-image: linear-gradient(to top left, violet,indigo,blue,green,yellow,orange,red); */
+       background-image: url(./greenary.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+      }
+      .h{
+        text-align: center;
+         margin: 0px;
+         padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navbar1">GREEN</div>
+      <div class="navbar">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+          <a href="#main2">Home</a>
+          <a href="#main3">About</a>
+          <a href="#main4">Services</a>
+          <a href="">Portfolio</a>
+          <a href="">Team</a>
+          <a href="">dropdown</a>
+          <a href="#main5">Contact</a>
+          <a href="">GetStarted</a>
+        </div>
+      </div>
+      <div class="navbar2">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Team</li>
+          <li>Dropdown</li>
+          <li>contact</li>
+          <li>GetStarted</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main1">
+      <h1 class="h">Greenary Venture</h1>
+    </div>
+  </body>
+</html>
