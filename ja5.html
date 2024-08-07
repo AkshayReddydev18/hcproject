@@ -6,25 +6,98 @@
     <title>Document</title>
   </head>
   <body>
-     <script> 
-        let x=+prompt("enter a number");
- let y=+prompt("enter a number");
- let z=x+y;
- alert("answer is " + z);
-    </script> 
-
     <script>
-      let a = +prompt("enter a number");
-      let b = +prompt("enter a number");
-      let c = +prompt("enter a number");
+      //         let x=+prompt("enter a number");
+      //  let y=+prompt("enter a number");
+      //  let z=x+y;
+      //  alert("answer is " + z);
+      //
 
-      if (a > b && b > c) {
-        alert("c is greatest");
-      } else if (c > a && c > b) {
-        alert("c is greatest");
-      } else {
-        alert("b is greatest");
+
+
+      // let a = +prompt("enter a number");
+      // let b = +prompt("enter a number");
+      // let c = +prompt("enter a number");
+      // if (a > b && b > c) {
+      //   alert("c is greatest");
+      // } else if (c > a && c > b) {
+      //   alert("c is greatest");
+      // } else {
+      //   alert("b is greatest");
+      // }
+
+
+
+      // let onetimeview = Boolean(+prompt("enter"));
+      // if (onetimeview) {
+      //   alert("message cannot be forwarded");
+      // } else {
+      //   alert("meassage can be forwarded");
+      // }
+
+
+
+      // let time = +prompt(" enter your time");
+      // if (time < 24) {
+      //   alert("msg delete for everyone , " + " msg delete for me");
+      // } else {
+      //   alert("msg cannot delete for everyone , " + " msg delete for me ");
+      // }
+
+
+
+      // let a = +prompt("enter a number");
+      // let b = +prompt("enter a number");
+      // let c = +prompt("enter a number");
+      // let z = a + b + c;
+      // if (z == 180) {
+      //   if (a == 90 || b == 90 || c == 90) {
+      //     alert("it is a  right angled triangle");
+      //   }
+      //   else{
+      //     alert(" it is not a right angled triangle");
+      //   }
+      // }
+      // else{
+      //   alert(" it is not a  triangle");
+      // }
+
+
+
+      // let a=+prompt("enter");
+      // if((a&(a-1))==0){
+      //   alert("it is a power of 2")
+
+      // }
+      // else{
+      //   alert("it is not a power of 2")
+      // }
+
+
+
+      let credit_score = +prompt("enter credit_score");
+      let annual_income = +prompt("enter annual income");
+      let loan = +prompt(" enter loan amount");
+
+      if(credit_score>600){
+        if(annual_income>40000){
+         if(loan<=((annual_income)*(1/2))){
+          alert("your eligible for loan");
+
+         }
+         else{
+          alert("loan rejected due to loan amount is  more than half of your annual income")
+         }
+        }
+        else{
+          alert("loan rejected due to annual income is not mora than 40000")
+        }
       }
+      else{
+        alert("your loan rejected due low credit score ");
+      }
+
+
     </script>
   </body>
 </html>
